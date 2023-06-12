@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: #1f2039;
+    color: #f9f8ff;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    color: #A5B4FC;
+}
+
+em {
+    color: #A5B4FC;
+    font-style: normal;
+}
+
+section {
+    padding: 80px;
+}
+
+    /* Menu de navigation et footer */
+
+header, 
+footer {
+    background-color: whitesmoke;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+nav, 
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    margin-left: 3em;
+}
+li a {
+    text-decoration: none;
+    color: #242424;
+}
+li a:hover {
+    color: #A5B4FC;
+    font-weight: bold;
+}
+
+footer div {
+    margin-right: 40px;
+}
+
+    /* Call to action */
+.cta {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-top: 3em;
+    padding: 20px 30px;
+    background: linear-gradient(#8e86b5, #acaeed);
+    border-radius: 50px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.cta:hover {
+    background: linear-gradient(#696484, #8788ba);
+}
+
+.logo {
+    margin-left: 2em;
+}
+.logo:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 996px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 6em 4em;
+    }
+
+    header, 
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    .logo {
+        margin-bottom: 1em;
+    }
+
+    nav ul li {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    footer div {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5em;
+    }
+}
+
+
+
+
